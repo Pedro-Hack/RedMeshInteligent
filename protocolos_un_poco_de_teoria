@@ -1,0 +1,21 @@
+# B.A.T.M.A.N./batman-adv
+
+BATMAN se deriva del "Mejor enfoque para las redes móviles adhoc" y también funciona para sistemas estacionarios.
+
+Además de proporcionar conectividad de nodo a nodo y de nodo a red, batman-adv puede proporcionar un puente de múltiples 
+VLAN a través de una malla (o enlace), como para clientes "confiables", clientes, IoT y redes de administración. 
+Proporciona una alternativa fácil de configurar a otros enfoques de "backhaul", como conexiones WDS , 
+túneles GRE y varios enfoques de "relé" y "pseudo-relé".
+
+- batman-adv puede ejecutarse sobre una variedad de implementaciones de mallas, 
+que incluyen 802.11s, ad-hoc (IBSS) y múltiples enlaces punto a punto, por cable o inalámbricos.
+
+- batman-adv es razonablemente robusto a los cambios de topología, por lo general se adapta en un par de segundos.
+
+- batman-adv no proporciona encriptación o autenticación. Si es necesario, debe implementarse uno o ambos 
+en el transporte subyacente (malla cifrada, autenticada, por ejemplo) o protocolos (IPSEC, TLS , ssh, ...).
+
+- batman-adv es un protocolo de malla para una red de capa 2 (como las tramas de Ethernet) que se ejecuta en el núcleo
+- batmand es un demonio de espacio de usuario para un protocolo BATMAN anterior que funciona en la capa 3 (como los paquetes TCP / IP )
+
+A menos que tenga una buena razón para usar el anterior, batman-adv se sugiere el protocolo de Capa 3 (como la interoperación con una malla existente) .
