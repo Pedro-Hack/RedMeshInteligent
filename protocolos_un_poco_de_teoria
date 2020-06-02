@@ -1,6 +1,26 @@
+# Objetivos de los protocolos
+
 Los protocolos de enrutamiento de malla tienen como objeto revelar las
 rutas de la red, realizar el encaminamiento adecuado de los datos y
 controlar el mantenimiento de las rutas.
+
+# Funciones de los protocolos
+
+Las funciones que un protocolo de enrutamiento debe realizar son:
+
+- Aprender información sobre las rutas de enrutadores
+vecinos.
+
+- Dar a conocer información sobre sus rutas a los enrutadores
+vecinos.
+
+- Si más de una ruta posible existe a una subred, escoger la
+mejor ruta basada en la métrica.
+
+- Si la topología de la red cambia -por ejemplo, un enlace
+falla- debe reaccionar dando a conocer que algunas rutas
+han fallado, y escoger una nueva mejor ruta. Este proceso
+se conoce como convergencia.
 
 # B.A.T.M.A.N./batman-adv
 
