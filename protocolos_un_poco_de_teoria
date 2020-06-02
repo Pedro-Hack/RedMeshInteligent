@@ -1,3 +1,7 @@
+Los protocolos de enrutamiento de malla tienen como objeto revelar las
+rutas de la red, realizar el encaminamiento adecuado de los datos y
+controlar el mantenimiento de las rutas.
+
 # B.A.T.M.A.N./batman-adv
 
 BATMAN se deriva del "Mejor enfoque para las redes móviles adhoc" y también funciona para sistemas estacionarios.
