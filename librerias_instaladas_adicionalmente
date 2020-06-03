@@ -1,0 +1,3 @@
+# editor de texto nano
+
+opkg install nano
