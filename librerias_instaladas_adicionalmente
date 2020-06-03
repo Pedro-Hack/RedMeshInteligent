@@ -1,3 +1,7 @@
 # editor de texto nano
 
 opkg install nano
+
+# protocolo usado en este proyecto B.A.T.M.A.N.-adv
+
+opkg install kmod-batman-adv
