@@ -20,6 +20,12 @@ config zone
         option mtu_fix '1'
         option network 'wan wan6 wwan'
 
+config zone
+        option name 'wifi'
+        option input 'ACCEPT'
+        option output 'ACCEPT'
+        option forward 'ACCEPT'
+       
 config forwarding
         option src 'lan'
         option dest 'wan'
