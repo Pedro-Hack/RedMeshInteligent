@@ -2,7 +2,7 @@ config defaults
         option syn_flood '1'
         option input 'ACCEPT'
         option output 'ACCEPT'
-        option forward 'ACCEPT'
+        option forward 'REJECT'
 
 config zone
         option name 'lan'
@@ -13,28 +13,16 @@ config zone
 
 config zone
         option name 'wan'
-        option input 'ACCEPT'
+        option input 'REJECT'
         option output 'ACCEPT'
-        option forward 'ACCEPT'
+        option forward 'REJECT'
         option masq '1'
         option mtu_fix '1'
         option network 'wan wan6 wwan'
 
-config zone
-        option name 'wifi'
-        option input 'ACCEPT'
-        option output 'ACCEPT'
-        option forward 'ACCEPT'
-       
 config forwarding
         option src 'lan'
         option dest 'wan'
-        option mtu_fix '1'
-
-config forwarding
-        option src 'wifi'
-        option dest 'wan' 
-        option mtu_fix '1'
 
 config rule
         option name 'Allow-DHCP-Renew'
@@ -130,3 +118,5 @@ config rule
 
 config include
         option path '/etc/firewall.user'
+
+
